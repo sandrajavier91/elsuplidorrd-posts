@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El Suplidor RD · Pescados, mariscos y carnes al por mayor</title>
+<meta name="description" content="Abastecimiento al por mayor para restaurantes, hoteles y negocios gastronómicos en República Dominicana. Pescados, mariscos y carnes importadas. Cotiza por WhatsApp.">
+<meta property="og:title" content="El Suplidor RD · Abastecimiento al por mayor">
+<meta property="og:description" content="Pescados, mariscos y carnes para restaurantes y hoteles en RD. Cotiza por WhatsApp.">
+<meta property="og:image" content="posts/1_El_Suplidor_RD_presentacion.jpg">
+<link rel="icon" href="posts/Foto_perfil_El_Suplidor_RD.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<style>
+:root{--petrol:#123C49;--teal:#168F89;--ice:#E9F2EF;--ivory:#F8F7F3;--coral:#E97848;--ink:#123C49;--muted:#3E5A63;--line:#DCE6E2}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--ivory);color:var(--ink);line-height:1.55}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.rd{background:var(--coral);color:var(--petrol);font-weight:800;border-radius:6px;padding:2px 7px;font-size:.62em;vertical-align:.18em}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:20px;letter-spacing:-.02em}
+.nav nav{display:flex;gap:26px;font-weight:600;font-size:15px;color:var(--muted)}
+.nav nav a{text-decoration:none}.nav nav a:hover{color:var(--teal)}
+.btn{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:800;border-radius:12px;padding:14px 22px;font-size:16px;transition:transform .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-wa{background:var(--coral);color:var(--petrol)}
+.btn-line{border:2px solid var(--petrol);padding:12px 20px}
+.btn-sm{padding:10px 16px;font-size:14px}
+.hero{padding:64px 0 56px}
+.hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+.tag{display:inline-block;background:#FCE6DC;color:#A8481F;font-weight:800;font-size:12px;letter-spacing:.14em;padding:8px 14px;border-radius:999px}
+h1{font-size:clamp(38px,5.6vw,64px);line-height:1.04;letter-spacing:-.035em;font-weight:800;margin:20px 0 18px}
+h1 em{font-style:normal;color:var(--teal)}
+.lead{font-size:18px;color:var(--muted);max-width:540px}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:28px;font-size:14px;font-weight:600;color:var(--muted)}
+.trust span::before{content:"✓ ";color:var(--teal);font-weight:800}
+.hero-card{background:var(--petrol);color:#fff;border-radius:24px;padding:34px;position:relative;overflow:hidden;min-height:400px;display:flex;flex-direction:column;justify-content:flex-end}
+.hero-card svg.bg{position:absolute;right:-60px;top:-30px;opacity:.12}
+.hero-card .big{font-size:34px;font-weight:800;line-height:1.1;letter-spacing:-.02em;position:relative}
+.hero-card .big span{color:#6FD3CB}
+.hero-card p{color:#C9DCE0;margin-top:12px;position:relative}
+section{padding:72px 0}
+.kicker{font-size:13px;font-weight:800;letter-spacing:.16em;color:var(--teal)}
+h2{font-size:clamp(30px,4vw,44px);letter-spacing:-.03em;line-height:1.1;font-weight:800;margin:10px 0 14px}
+.sub{color:var(--muted);max-width:620px;font-size:17px}
+.cats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:36px}
+.cat{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px;display:flex;flex-direction:column;gap:12px}
+.cat .ic{width:56px;height:56px;border-radius:16px;display:flex;align-items:center;justify-content:center}
+.cat h3{font-size:22px;letter-spacing:-.02em}
+.cat p{color:var(--muted);font-size:15px;flex-grow:1}
+.cat ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px}
+.cat li{background:var(--ice);font-size:13px;font-weight:600;padding:5px 10px;border-radius:999px}
+.cat a{font-weight:800;color:var(--teal);text-decoration:none;font-size:15px}
+.cat.dark{background:var(--petrol);color:#fff;border:none}.cat.dark p{color:#B9CDD2}
+.ice{background:var(--ice)}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:36px}
+.step{background:#fff;border-radius:20px;padding:28px}
+.step .n{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;margin-bottom:16px}
+.step h3{font-size:21px;margin-bottom:6px}.step p{color:var(--muted)}
+.why{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.why ul{list-style:none;display:flex;flex-direction:column;gap:16px;margin-top:20px}
+.why li{display:flex;gap:14px;align-items:flex-start;font-size:17px}
+.why li b{display:block}
+.why li span.dot{flex:none;width:28px;height:28px;border-radius:8px;background:var(--teal);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;margin-top:2px}
+.who{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.who div{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;font-weight:700;font-size:18px}
+.who div small{display:block;font-weight:500;color:var(--muted);font-size:14px;margin-top:4px}
+.cta{background:var(--petrol);color:#fff;border-radius:28px;padding:56px 40px;text-align:center}
+.cta h2{color:#fff}.cta p{color:#C9DCE0;max-width:560px;margin:0 auto 26px}
+.cta .num{font-size:28px;font-weight:800;margin-bottom:22px;color:#6FD3CB}
+footer{padding:36px 0 110px;color:var(--muted);font-size:14px}
+footer .row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+.float{position:fixed;right:18px;bottom:18px;z-index:30;box-shadow:0 10px 30px rgba(18,60,73,.28)}
+@media (max-width:900px){
+  .nav nav{display:none}
+  .hero-grid,.why{grid-template-columns:1fr}
+  .hero-card{min-height:280px}
+  .cats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .steps{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .cats,.who{grid-template-columns:1fr}
+  .hero{padding:40px 0}
+  section{padding:56px 0}
+  .btn{width:100%;justify-content:center}
+  .nav .btn-sm{width:auto}
+  .float{left:16px;right:16px;justify-content:center}
+  .cta{padding:40px 22px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#">
+      <svg width="36" height="36" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#123C49"/><path d="M17 20 L29 32 L17 44" fill="none" stroke="#E9F2EF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M31 20 L43 32 L31 44" fill="none" stroke="#168F89" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="51" cy="32" r="4.5" fill="#E97848"/></svg>
+      <span>El Suplidor <span class="rd">RD</span></span>
+    </a>
+    <nav><a href="#productos">Productos</a><a href="#como">Cómo pedir</a><a href="#porque">Por qué nosotros</a><a href="#contacto">Contacto</a></nav>
+    <a class="btn btn-wa btn-sm" href="https://wa.me/18493548064?text=Hola%20El%20Suplidor%20RD%2C%20quiero%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener">Cotizar</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="tag">PARA RESTAURANTES Y HOTELES</span>
+      <h1>Pescados, mariscos y carnes <em>al por mayor</em></h1>
+      <p class="lead">Somos los suplidores de tus suplidores. Abastecemos negocios gastronómicos en República Dominicana con producto fresco y cortes importados.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-wa" href="https://wa.me/18493548064?text=Hola%20El%20Suplidor%20RD%2C%20quiero%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L3 21l1.9-6.3A8 8 0 1 1 21 12z"/></svg>
+          Cotizar por WhatsApp</a>
+        <a class="btn btn-line" href="#productos">Ver productos</a>
+      </div>
+      <div class="trust"><span>Pesca directa de Miches</span><span>Cortes importados</span><span>Ventas solo al por mayor</span></div>
+    </div>
+    <div class="hero-card">
+      <svg class="bg" width="420" height="420" viewBox="12 16 44 32" aria-hidden="true"><path d="M17 20 L29 32 L17 44" fill="none" stroke="#E9F2EF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M31 20 L43 32 L31 44" fill="none" stroke="#168F89" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div class="big">Frescura <span>de verdad.</span><br>Del mar a tu cocina.</div>
+      <p>Directo de pescadores dominicanos, sin intermediarios de más.</p>
+    </div>
+  </div>
+</section>
+
+<section id="productos" class="ice">
+  <div class="wrap">
+    <div class="kicker">PRODUCTOS</div>
+    <h2>Lo que suplimos</h2>
+    <p class="sub">Precios al por mayor según disponibilidad. Pide la lista de esta semana por WhatsApp.</p>
+    <div class="cats">
+      <div class="cat">
+        <div class="ic" style="background:#123C49"><svg width="30" height="30" viewBox="0 0 48 48" fill="none" stroke="#6FD3CB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24c6-8 16-10 24-6 3 1.5 5 4 6 6-1 2-3 4.5-6 6-8 4-18 2-24-6z"/><path d="M10 24 3 17v14z"/></svg></div>
+        <h3>Pescados</h3><p>Frescos de Miches y de temporada.</p>
+        <ul><li>Chillo</li><li>Dorado</li><li>Mero</li><li>Colirrubia</li><li>Atún</li><li>Salmón</li></ul>
+        <a href="https://wa.me/18493548064?text=Hola%2C%20quiero%20cotizar%20pescados" target="_blank" rel="noopener">Cotizar →</a>
+      </div>
+      <div class="cat">
+        <div class="ic" style="background:#168F89"><svg width="30" height="30" viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M14 10c10 0 22 6 22 18 0 6-4 10-10 10"/><path d="M14 10c-4 4-4 10 2 12M20 18c-2 3-1 6 3 7M27 26c-1 3 1 6 4 6"/></svg></div>
+        <h3>Mariscos</h3><p>Frescos e importados, para tu menú diario.</p>
+        <ul><li>Langosta</li><li>Camarones</li><li>Pulpo</li><li>Calamar</li><li>Lambí</li><li>Cangrejo</li></ul>
+        <a href="https://wa.me/18493548064?text=Hola%2C%20quiero%20cotizar%20mariscos" target="_blank" rel="noopener">Cotizar →</a>
+      </div>
+      <div class="cat">
+        <div class="ic" style="background:#E97848"><svg width="30" height="30" viewBox="0 0 48 48" fill="none" stroke="#123C49" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22c0-8 9-13 19-12 10 1 15 8 13 16-2 9-12 13-21 12C11 37 8 30 8 22z"/><path d="M15 23c3-5 9-6 13-4"/><circle cx="29" cy="27" r="3.5"/></svg></div>
+        <h3>Carnes importadas</h3><p>Cortes para cocina profesional.</p>
+        <ul><li>Ribeye</li><li>Churrasco</li><li>Picaña</li><li>Filete de res</li></ul>
+        <a href="https://wa.me/18493548064?text=Hola%2C%20quiero%20cotizar%20carnes%20importadas" target="_blank" rel="noopener">Cotizar →</a>
+      </div>
+      <div class="cat dark">
+        <div class="ic" style="background:rgba(255,255,255,.1)"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#6FD3CB" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></div>
+        <h3>Y más</h3><p>Pronto más categorías para tu negocio. ¿Buscas algo específico? Pregúntanos.</p>
+        <a href="https://wa.me/18493548064?text=Hola%2C%20estoy%20buscando%20un%20producto" target="_blank" rel="noopener" style="color:#6FD3CB">Preguntar →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="como">
+  <div class="wrap">
+    <div class="kicker">CÓMO PEDIR</div>
+    <h2>Pedir es así de fácil</h2>
+    <div class="steps">
+      <div class="step"><div class="n" style="background:#E97848;color:#123C49">1</div><h3>Escríbenos</h3><p>Dinos qué productos necesitas, cantidades y fecha de entrega por WhatsApp.</p></div>
+      <div class="step"><div class="n" style="background:#168F89;color:#fff">2</div><h3>Recibe tu cotización</h3><p>Te confirmamos disponibilidad, precio al por mayor y condiciones.</p></div>
+      <div class="step"><div class="n" style="background:#123C49;color:#fff">3</div><h3>Coordinamos la entrega</h3><p>Programamos la ruta y recibes la mercancía en tu negocio.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="porque" class="ice">
+  <div class="wrap why">
+    <div>
+      <div class="kicker">POR QUÉ EL SUPLIDOR RD</div>
+      <h2>Somos los suplidores de tus suplidores</h2>
+      <ul>
+        <li><span class="dot">1</span><div><b>Directo desde el origen</b>Trabajamos con pescadores y suplidores de origen. Menos intermediarios, mejor precio.</div></li>
+        <li><span class="dot">2</span><div><b>Frescura de verdad</b>Pesca directa de Miches y producto seleccionado para cocina profesional.</div></li>
+        <li><span class="dot">3</span><div><b>Atención rápida</b>Cotizaciones y pedidos por WhatsApp, con seguimiento a cada cliente.</div></li>
+      </ul>
+    </div>
+    <div class="who">
+      <div>Restaurantes<small>Menú diario y especiales</small></div>
+      <div>Hoteles<small>Volumen y constancia</small></div>
+      <div>Catering y eventos<small>Pedidos por evento</small></div>
+      <div>Pescaderías y colmados<small>Reventa al detalle</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="wrap">
+    <div class="cta">
+      <h2>¿Listo para abastecer tu cocina?</h2>
+      <p>Escríbenos y te enviamos la lista de precios de esta semana.</p>
+      <div class="num">WhatsApp 849-354-8064</div>
+      <a class="btn btn-wa" href="https://wa.me/18493548064?text=Hola%20El%20Suplidor%20RD%2C%20quiero%20la%20lista%20de%20precios" target="_blank" rel="noopener">Pedir lista de precios</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap row">
+    <span><b style="color:#123C49">El Suplidor <span class="rd">RD</span></b> · Abastecimiento mayorista · República Dominicana</span>
+    <span><a href="https://www.instagram.com/elsuplidor.do" target="_blank" rel="noopener">Instagram @elsuplidor.do</a> · <a href="mailto:elsuplidorrd.do@gmail.com">elsuplidorrd.do@gmail.com</a></span>
+  </div>
+</footer>
+
+<a class="btn btn-wa float" href="https://wa.me/18493548064?text=Hola%20El%20Suplidor%20RD%2C%20quiero%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L3 21l1.9-6.3A8 8 0 1 1 21 12z"/></svg>
+  Cotizar por WhatsApp</a>
+</body>
+</html>

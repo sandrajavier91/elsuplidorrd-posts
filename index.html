@@ -9,6 +9,8 @@
 <meta property="og:description" content="Los suplidores de tus suplidores. Pescados, mariscos y carnes al por mayor en RD.">
 <meta property="og:image" content="https://suplidorrd.com/posts/1_El_Suplidor_RD_presentacion.jpg">
 <link rel="icon" href="posts/Foto_perfil_El_Suplidor_RD.jpg">
+<link rel="canonical" href="https://suplidorrd.com/">
+<meta name="theme-color" content="#123C49">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
 <style>
@@ -77,6 +79,30 @@ h2{font-size:clamp(30px,4vw,44px);letter-spacing:-.03em;line-height:1.1;font-wei
 .band h2{color:#fff;max-width:680px}
 .band p{color:#E9F2EF;max-width:560px}
 @media (max-width:560px){.band{padding:26px;min-height:300px}}
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:10px}
+.faq summary{font-weight:700;font-size:17px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::after{content:"+";color:var(--teal);font-weight:800;font-size:22px;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq details p{color:var(--muted);margin-top:10px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+.cinfo{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cinfo a,.cinfo div{background:rgba(255,255,255,.07);border:1px solid rgba(111,211,203,.25);border-radius:14px;padding:14px 16px;text-decoration:none;color:#fff;font-weight:700;font-size:15px;word-break:break-word}
+.cinfo span{display:block;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#6FD3CB;margin-bottom:4px}
+.qform{background:#fff;border-radius:28px;padding:32px;display:flex;flex-direction:column;gap:14px;border:1px solid var(--line)}
+.qform h3{font-size:24px;letter-spacing:-.02em}.qform p{color:var(--muted);font-size:15px;margin-top:-6px}
+.qform label{display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:14px}
+.qform input,.qform select,.qform textarea{font:inherit;font-weight:500;border:1.5px solid var(--line);border-radius:10px;padding:12px 14px;background:var(--ivory);color:var(--ink)}
+.qform input:focus,.qform select:focus,.qform textarea:focus{outline:2px solid var(--teal);border-color:var(--teal)}
+.qform .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.qform button{border:none;cursor:pointer;justify-content:center;margin-top:4px}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px}
+.fgrid b{display:block;color:var(--ink);margin-bottom:8px}
+.fgrid div>a:not(.logo){display:block;text-decoration:none;margin-bottom:6px}
+.fgrid a:hover{color:var(--teal)}
+.fbottom{display:flex;justify-content:space-between;border-top:1px solid var(--line);margin-top:26px;padding-top:18px;font-size:13px}
+@media (max-width:900px){.faq-grid,.contact-grid,.fgrid{grid-template-columns:1fr}}
+@media (max-width:560px){.cinfo,.qform .two{grid-template-columns:1fr}.qform{padding:22px}}
 .ice{background:var(--ice)}
 .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:36px}
 .step{background:#fff;border-radius:20px;padding:28px}
@@ -113,6 +139,7 @@ footer .row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;a
   .cta{padding:40px 22px}
 }
 </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WholesaleStore","name":"El Suplidor RD","description":"Los suplidores de tus suplidores. Pescados, mariscos y carnes al por mayor en República Dominicana.","url":"https://suplidorrd.com","telephone":"+1-849-354-8064","email":"ventas@suplidorrd.com","address":{"@type":"PostalAddress","addressCountry":"DO"},"sameAs":["https://www.instagram.com/elsuplidor.do"]}</script>
 </head>
 <body>
 
@@ -122,7 +149,7 @@ footer .row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;a
       <svg width="36" height="36" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#123C49"/><path d="M17 20 L29 32 L17 44" fill="none" stroke="#E9F2EF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M31 20 L43 32 L31 44" fill="none" stroke="#168F89" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="51" cy="32" r="4.5" fill="#E97848"/></svg>
       <span>El Suplidor <span class="rd">RD</span></span>
     </a>
-    <nav><a href="#productos">Productos</a><a href="#como">Cómo pedir</a><a href="#porque">Por qué nosotros</a><a href="#contacto">Contacto</a></nav>
+    <nav><a href="#productos">Productos</a><a href="#como">Cómo pedir</a><a href="#porque">Por qué nosotros</a><a href="#preguntas">Preguntas</a><a href="#contacto">Contacto</a></nav>
     <a class="btn btn-wa btn-sm" href="https://wa.me/18493548064?text=Hola%20El%20Suplidor%20RD%2C%20quiero%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener">Cotizar</a>
   </div>
 </header>
@@ -238,25 +265,77 @@ footer .row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;a
   </div>
 </section>
 
-<section id="contacto">
-  <div class="wrap">
-    <div class="cta">
-      <h2>¿Listo para abastecer tu cocina?</h2>
-      <p>Escríbenos y te enviamos la lista de precios de esta semana.</p>
-      <div class="num">WhatsApp 849-354-8064</div>
-      <p style="margin:-10px auto 22px"><a href="mailto:ventas@suplidorrd.com" style="color:#fff;font-weight:700">ventas@suplidorrd.com</a></p>
-      <a class="btn btn-wa" href="https://wa.me/18493548064?text=Hola%20El%20Suplidor%20RD%2C%20quiero%20la%20lista%20de%20precios" target="_blank" rel="noopener">Pedir lista de precios</a>
+<section id="preguntas">
+  <div class="wrap faq-grid">
+    <div>
+      <div class="kicker">PREGUNTAS FRECUENTES</div>
+      <h2>Lo que más nos preguntan</h2>
+      <p class="sub">¿Tienes otra duda? Escríbenos por WhatsApp y te respondemos.</p>
     </div>
+    <div class="faq">
+      <details open><summary>¿Venden al detalle?</summary><p>No. Somos suplidores al por mayor: abastecemos negocios que compran para cocinar o revender.</p></details>
+      <details><summary>¿Tienen lista de precios?</summary><p>Sí. Los precios cambian según la temporada y la disponibilidad del mar, por eso enviamos la lista actualizada por WhatsApp cada semana.</p></details>
+      <details><summary>¿Cómo hago un pedido?</summary><p>Escríbenos por WhatsApp o llena el formulario de abajo con los productos, cantidades y fecha. Te confirmamos disponibilidad y precio antes de cerrar el pedido.</p></details>
+      <details><summary>¿Hacen entregas?</summary><p>Sí. Coordinamos la entrega según tu zona y el tamaño del pedido. Te damos los detalles al cotizar.</p></details>
+      <details><summary>¿Cuáles son las formas de pago?</summary><p>Te indicamos las condiciones de pago con cada cotización, según el tipo de producto y el volumen del pedido.</p></details>
+      <details><summary>¿El pescado es fresco o congelado?</summary><p>Manejamos pesca criolla fresca y también producto congelado e importado. En la cotización te indicamos cómo viene cada producto.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="ice">
+  <div class="wrap contact-grid">
+    <div class="cta" style="text-align:left;background:linear-gradient(180deg,rgba(18,60,73,1) 45%,rgba(18,60,73,.6) 100%),url('https://images.unsplash.com/photo-1650081484817-582d41d82f8d?w=1000&q=75&auto=format&fit=crop') center bottom/cover">
+      <div class="kicker" style="color:#6FD3CB">CONTACTO</div>
+      <h2>Somos los suplidores de tus suplidores.</h2>
+      <p style="margin:0 0 24px">Pide tu cotización o la lista de precios de esta semana.</p>
+      <div class="cinfo">
+        <a href="https://wa.me/18493548064?text=Hola%20El%20Suplidor%20RD%2C%20quiero%20la%20lista%20de%20precios" target="_blank" rel="noopener"><span>WhatsApp</span>849-354-8064</a>
+        <a href="mailto:ventas@suplidorrd.com"><span>Correo</span>ventas@suplidorrd.com</a>
+        <a href="https://www.instagram.com/elsuplidor.do" target="_blank" rel="noopener"><span>Instagram</span>@elsuplidor.do</a>
+        <div><span>Ubicación</span>República Dominicana</div>
+      </div>
+    </div>
+    <form class="qform" id="qform">
+      <h3>Solicita tu cotización</h3>
+      <p>Llena los datos y se abre WhatsApp con tu pedido listo para enviar.</p>
+      <label>Tu nombre<input name="nombre" required autocomplete="name"></label>
+      <label>Nombre del negocio<input name="negocio" required autocomplete="organization"></label>
+      <div class="two">
+        <label>Tipo de negocio<select name="tipo"><option>Restaurante</option><option>Hotel</option><option>Catering / eventos</option><option>Pescadería / colmado</option><option>Supermercado</option><option>Otro</option></select></label>
+        <label>Ciudad / zona<input name="zona" required placeholder="Ej. Santo Domingo"></label>
+      </div>
+      <label>Productos y cantidades<textarea name="productos" rows="4" required placeholder="Ej. 30 lb de chillo, 20 lb de camarones 16/20"></textarea></label>
+      <label>¿Para cuándo lo necesitas?<input name="fecha" placeholder="Ej. este viernes"></label>
+      <button class="btn btn-wa" type="submit">Enviar por WhatsApp</button>
+    </form>
   </div>
 </section>
 </main>
 
 <footer>
-  <div class="wrap row">
-    <span><b style="color:#123C49">El Suplidor <span class="rd">RD</span></b> · Abastecimiento mayorista · República Dominicana</span>
-    <span><a href="https://www.instagram.com/elsuplidor.do" target="_blank" rel="noopener">Instagram @elsuplidor.do</a> · <a href="mailto:ventas@suplidorrd.com">ventas@suplidorrd.com</a> · Fotos: Unsplash</span>
+  <div class="wrap fgrid">
+    <div>
+      <a class="logo" href="#"><svg width="32" height="32" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#123C49"/><path d="M17 20 L29 32 L17 44" fill="none" stroke="#E9F2EF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M31 20 L43 32 L31 44" fill="none" stroke="#168F89" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="51" cy="32" r="4.5" fill="#E97848"/></svg><span>El Suplidor <span class="rd">RD</span></span></a>
+      <p style="margin-top:10px;max-width:320px">Los suplidores de tus suplidores. Pescados, mariscos y carnes al por mayor en República Dominicana.</p>
+    </div>
+    <div><b>Navegación</b><a href="#productos">Productos</a><a href="#como">Cómo pedir</a><a href="#porque">Por qué nosotros</a><a href="#preguntas">Preguntas</a></div>
+    <div><b>Contacto</b><a href="https://wa.me/18493548064" target="_blank" rel="noopener">WhatsApp 849-354-8064</a><a href="mailto:ventas@suplidorrd.com">ventas@suplidorrd.com</a><a href="https://www.instagram.com/elsuplidor.do" target="_blank" rel="noopener">Instagram</a></div>
   </div>
+  <div class="wrap fbottom"><span>© 2026 El Suplidor RD</span><span>Fotos: Unsplash</span></div>
 </footer>
+<script>
+document.getElementById('qform').addEventListener('submit',function(e){
+  e.preventDefault();var f=new FormData(this);
+  var t='Hola El Suplidor RD, quiero una cotización.%0A%0A'+
+  '*Nombre:* '+encodeURIComponent(f.get('nombre'))+'%0A'+
+  '*Negocio:* '+encodeURIComponent(f.get('negocio'))+' ('+encodeURIComponent(f.get('tipo'))+')%0A'+
+  '*Zona:* '+encodeURIComponent(f.get('zona'))+'%0A'+
+  '*Productos:* '+encodeURIComponent(f.get('productos'))+'%0A'+
+  (f.get('fecha')?'*Para:* '+encodeURIComponent(f.get('fecha')):'');
+  window.open('https://wa.me/18493548064?text='+t,'_blank');
+});
+</script>
 
 <a class="btn btn-wa float" href="https://wa.me/18493548064?text=Hola%20El%20Suplidor%20RD%2C%20quiero%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener">
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L3 21l1.9-6.3A8 8 0 1 1 21 12z"/></svg>

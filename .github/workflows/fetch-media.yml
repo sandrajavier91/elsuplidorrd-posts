@@ -1,0 +1,29 @@
+name: Fetch licensed media
+on:
+  push:
+    paths: ["natural-era/sources.txt"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download files listed in sources.txt (name|url per line)
+        run: |
+          mkdir -p natural-era/src
+          while IFS='|' read -r name url; do
+            [ -z "$name" ] && continue
+            case "$name" in \#*) continue;; esac
+            [ -f "natural-era/src/$name" ] && continue
+            curl -sSL --fail -A "Mozilla/5.0" -o "natural-era/src/$name" "$url" || echo "FAILED $name"
+          done < natural-era/sources.txt
+          ls -la natural-era/src
+      - name: Commit
+        run: |
+          git config user.name "media-bot"
+          git config user.email "media-bot@users.noreply.github.com"
+          git add natural-era/src
+          git diff --cached --quiet || git commit -m "Add fetched media"
+          git push

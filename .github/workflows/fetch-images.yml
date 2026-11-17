@@ -1,0 +1,27 @@
+name: Fetch stock images
+on:
+  push:
+    paths: ['daily-dozen/fetch/urls.txt']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download listed images
+        run: |
+          mkdir -p daily-dozen/fetch/out
+          while read -r name url; do
+            [ -z "$name" ] && continue
+            curl -fsSL -A "Mozilla/5.0" -o "daily-dozen/fetch/out/$name" "$url" || echo "failed $name"
+          done < daily-dozen/fetch/urls.txt
+          ls -la daily-dozen/fetch/out
+      - name: Commit
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add daily-dozen/fetch/out
+          git commit -m "Fetched images" || echo "nothing to commit"
+          git push
